@@ -8,13 +8,13 @@ namespace Tests
     public class ZTests
     {
         [DllImport("Z")]
-        public static extern int Z(int i);
+        public static extern int Z(string word, string str);
 
         [Test]
         public void InvokeTest()
         {
-            const int expected = 42 * 41;
-            int actual = Z(42);
+            const int expected = 3;
+            int actual = Z("lal","lalalalalalal");
             Assert.AreEqual(expected, actual);
         }
     }

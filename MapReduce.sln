@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{2857B73E-F847-4B02-9238-064979017E93}") = "Z", "Z\Z.cproj", "{C8B74514-C8CB-42D3-A373-5087B1170A9B}"
+Project("{2857B73E-F847-4B02-9238-064979017E93}") = "Z", "Z\Z.cproj", "{25B9887F-263B-4D5A-B7DD-E8C5DC93ABDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{20B26795-4DD0-4E7E-960D-C621A3330681}"
 EndProject
@@ -15,12 +15,12 @@ Global
 		{20B26795-4DD0-4E7E-960D-C621A3330681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B26795-4DD0-4E7E-960D-C621A3330681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B26795-4DD0-4E7E-960D-C621A3330681}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8B74514-C8CB-42D3-A373-5087B1170A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8B74514-C8CB-42D3-A373-5087B1170A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8B74514-C8CB-42D3-A373-5087B1170A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8B74514-C8CB-42D3-A373-5087B1170A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B9887F-263B-4D5A-B7DD-E8C5DC93ABDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B9887F-263B-4D5A-B7DD-E8C5DC93ABDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B9887F-263B-4D5A-B7DD-E8C5DC93ABDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B9887F-263B-4D5A-B7DD-E8C5DC93ABDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Z\Z.cproj
+		StartupItem = Tests\Tests.csproj
 	EndGlobalSection
 EndGlobal

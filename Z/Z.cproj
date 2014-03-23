@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C8B74514-C8CB-42D3-A373-5087B1170A9B}</ProjectGuid>
+    <ProjectGuid>{25B9887F-263B-4D5A-B7DD-E8C5DC93ABDE}</ProjectGuid>
     <Compiler>
-      <Compiler ctype="GppCompiler" />
+      <Compiler ctype="GccCompiler" />
     </Compiler>
-    <Language>CPP</Language>
+    <Language>C</Language>
     <Target>Bin</Target>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -19,7 +19,6 @@
     <CompileTarget>SharedLibrary</CompileTarget>
     <DefineSymbols>DEBUG MONODEVELOP</DefineSymbols>
     <SourceDirectory>.</SourceDirectory>
-    <ExtraCompilerArguments>-fPIC</ExtraCompilerArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -33,6 +32,6 @@
     <None Include="z.h" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="z.cpp" />
+    <Compile Include="z.c" />
   </ItemGroup>
 </Project>

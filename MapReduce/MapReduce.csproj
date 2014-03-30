@@ -32,5 +32,6 @@
   <ItemGroup>
     <Compile Include="NativeStringTools.cs" />
     <Compile Include="Application.cs" />
+    <Compile Include="Workload.cs" />
   </ItemGroup>
 </Project>

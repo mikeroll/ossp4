@@ -38,4 +38,10 @@
     <Compile Include="Tests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\MapReduce\MapReduce.csproj">
+      <Project>{E8966E12-B916-4B70-A4E2-69389B9A4B80}</Project>
+      <Name>MapReduce</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

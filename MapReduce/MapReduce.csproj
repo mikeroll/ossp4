@@ -31,5 +31,6 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="NativeStringTools.cs" />
+    <Compile Include="Application.cs" />
   </ItemGroup>
 </Project>

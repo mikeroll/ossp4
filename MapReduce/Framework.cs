@@ -1,8 +1,9 @@
-using System.Linq;
-using System.Collections.Generic;
+using System;
 using System.Collections.Concurrent;
-using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace MapReduce
 {
@@ -23,9 +24,12 @@ namespace MapReduce
         {
             var mapResults = new ConcurrentBag<KeyValuePair<string, int>>();
 
-            Parallel.ForEach(input, (line) =>
-            {
-                mapResults.Add(Map(word, line));
+            var po = new ParallelOptions { MaxDegreeOfParallelism = Environment.ProcessorCount };
+
+            Parallel.ForEach(input, po, (line) => {
+                var m = Map(word, line);
+                if (m.Value != 0)
+                    mapResults.Add(m);
             });
 
             var reduceSources = mapResults.GroupBy(
@@ -33,10 +37,11 @@ namespace MapReduce
                 (key, values) => new KeyValuePair<string, IEnumerable<int>>(key, values.Select(i=>i.Value)));
 
             int totalCount = 0;
-            Parallel.ForEach(reduceSources, (kvp) => {
+            Parallel.ForEach(reduceSources, (kvp) =>
+            {
                 Interlocked.Add(ref totalCount, Reduce(kvp));
             });
-
+                    
             return totalCount;
         }
     }

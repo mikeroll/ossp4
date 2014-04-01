@@ -21,7 +21,7 @@
     <SourceDirectory>.</SourceDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>..\MapReduce\bin\Release</OutputPath>
     <OutputName>Z</OutputName>
     <CompileTarget>SharedLibrary</CompileTarget>
     <OptimizationLevel>3</OptimizationLevel>

@@ -33,5 +33,9 @@
     <Compile Include="NativeStringTools.cs" />
     <Compile Include="Application.cs" />
     <Compile Include="Workload.cs" />
+    <Compile Include="Framework.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
 </Project>

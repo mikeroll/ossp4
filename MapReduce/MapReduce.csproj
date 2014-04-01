@@ -34,6 +34,7 @@
     <Compile Include="Application.cs" />
     <Compile Include="Workload.cs" />
     <Compile Include="Framework.cs" />
+    <Compile Include="NativeNotifications.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

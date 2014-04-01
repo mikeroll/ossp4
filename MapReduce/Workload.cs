@@ -24,10 +24,6 @@ namespace MapReduce
             Filename = filename;
             Size = new FileInfo(filename).Length;
             stream = File.OpenRead(filename);
-            if (!stream.CanRead)
-            {
-                throw new IOException("Input file provided can not be read.");
-            }
         }
 
         #region IEnumerable implementation
